@@ -2,10 +2,7 @@
 title: "Cite all my papers"
 author: "Nathan Skene"
 date: "15/01/2020"
-output:
-  word_document: default
-  pdf_document: default
-  html_document: default
+output: md_document
 csl: elsevier-vancouver.csl
 bibliography: works.bib
 ---
