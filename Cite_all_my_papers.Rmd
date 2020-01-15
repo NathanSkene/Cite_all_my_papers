@@ -1,0 +1,35 @@
+---
+title: "Cite all my papers"
+author: "Nathan Skene"
+date: "15/01/2020"
+output:
+  word_document: default
+  pdf_document: default
+  html_document: default
+csl: elsevier-vancouver.csl
+bibliography: works.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Intro
+
+To cite all my papers in Vancouver format, download the bibtex from Orcid and paste into this folder
+
+To use a different bibliography style get them from here: https://github.com/citation-style-language/styles
+
+## References
+
+```{r generateBibliography, echo=FALSE, eval=TRUE, message=FALSE, warning=FALSE}
+require("knitcitations")
+#cleanbib()
+options("citation_format" = "pandoc")
+#read.bibtex(file = "works.bib")
+```
+
+---
+nocite: |
+  '@*'
+...
